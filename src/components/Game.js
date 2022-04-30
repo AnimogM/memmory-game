@@ -48,7 +48,7 @@ function Game() {
           />
         ))}
       </div>
-      <p className="text-center pb-5">Turns: {turns}</p>
+      <p className="text-center dark:text-white pb-5">Turns: {turns}</p>
     </div>
   );
 }
