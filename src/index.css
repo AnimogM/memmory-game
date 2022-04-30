@@ -2,40 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.grid{
-    display: grid;
-    gap: 7px;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+@layer {
+  .img{
+      @apply rounded-lg border transition duration-150 ease-in border-purple-600
+  }
 }
 
-.img{
-    /* max-width: 50px; */
-    cursor: pointer;
-    /* height: auto; */
-}
-
-/* .filf{
-    transition: .5s ease;
-}
-
-.font{
-    position: absolute;
-    transform: rotateY(90deg);
-}
-
-.filf .font{
-    position: relative;
-    transform: rotateY(-90deg);
-
-}
-.filf .back{
-    position: absolute;
-    transform: rotateY(90deg);
-} */
-.flex{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.rotateY {
+  transform: rotateY(90deg);
 }
